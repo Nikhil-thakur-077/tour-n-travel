@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Travel Tips - Incredible India</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#281900",
+                        "tertiary": "#006e2e",
+                        "on-tertiary-fixed": "#002109",
+                        "on-tertiary-fixed-variant": "#005321",
+                        "surface": "#fcf9f8",
+                        "primary-container": "#e8a317",
+                        "on-secondary-container": "#2a4486",
+                        "outline": "#837561",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#59c570",
+                        "on-secondary-fixed": "#00174a",
+                        "surface-container-high": "#eae7e7",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f6f3f2",
+                        "on-background": "#1c1b1b",
+                        "on-primary-fixed-variant": "#604100",
+                        "primary": "#7f5700",
+                        "secondary-container": "#9cb4fe",
+                        "tertiary-fixed": "#8dfa9e",
+                        "outline-variant": "#d6c4ad",
+                        "primary-fixed": "#ffdeae",
+                        "secondary": "#435b9f",
+                        "surface-tint": "#7f5700",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#004e1e",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#71dd85",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "primary-fixed-dim": "#ffba3e",
+                        "surface-container": "#f0eded",
+                        "on-surface": "#1c1b1b",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary-container": "#5b3d00",
+                        "secondary-fixed": "#dbe1ff",
+                        "on-surface-variant": "#514534",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "background": "#fcf9f8",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-variant": "#e5e2e1",
+                        "inverse-surface": "#313030",
+                        "inverse-primary": "#ffba3e",
+                        "secondary-fixed-dim": "#b3c5ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Noto Serif"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed" href="index.html">Incredible India</a>
+<nav class="hidden md:flex items-center space-x-md">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="destinations.html">Destinations</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="travel-tips.html">Travel Tips</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:bg-primary-container/90 transition-all duration-300 scale-105">
+                Plan My Trip
+            </button>
+</div>
+</header>
+<main class="pt-[80px]">
+<!-- Hero Section -->
+<section class="relative h-[614px] min-h-[400px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Taj Mahal morning mist" class="w-full h-full object-cover" data-alt="A wide-angle landscape photograph of the Taj Mahal at dawn, with a soft golden morning sun casting a warm glow over the white marble. The scene is captured in a high-key, modern aesthetic with airy lighting and deep depth of field. The reflection of the monument in the still waters of the Yamuna river creates a symmetrical and serene atmosphere, reflecting the vibrant yet ancient spirit of India." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClbKYIegceMB4mJPl50X9DU6zhLs1DyJn4MIIsRn0qwQ-D9m9Zs5MzCQsE6VlarZJVcQ0job3eDQ7jqrA--_j9QrBpTCNDSyjN6PRHIrsF9oK2dUE46K8pyaP7hcSpLFBWTtxpXwVnABuVCn5vfaowgZcckEBdOJzgYUjNrGCg0HdWaFBIpOGlGbal9_Ckhaiqi9pTRNFx7Vdi-B5bIniWAIrj9flgvlpJm_YdzMfw6szFT9FXHHnyBmv5MQI-kDDln5uYLYNJ0AQ"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-surface"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-gutter">
+<span class="inline-block px-4 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md mb-md uppercase tracking-widest">Guide</span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-base drop-shadow-sm">Travel Tips</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                    Essential travel tips for a smooth and enjoyable trip across India! From navigating local customs to finding the best street food, we've got you covered.
+                </p>
+</div>
+</section>
+<!-- Content Sections -->
+<section class="px-gutter py-xl max-w-container-max mx-auto">
+<!-- Bento Grid of Tips -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-md">
+<!-- Packing Essentials -->
+<div class="md:col-span-8 glass-card rounded-xl p-lg flex flex-col md:flex-row gap-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full md:w-1/3 h-64 rounded-lg overflow-hidden">
+<img alt="Packing items flatlay" class="w-full h-full object-cover" data-alt="A stylish flat-lay photograph of essential travel items for India including light linen clothing, a sun hat, comfortable leather sandals, and a small brass travel journal. The lighting is bright and sunny, creating clean shadows against a textured cream background. The color palette is warm and inviting, emphasizing earth tones and natural textures that suggest a comfortable and culturally respectful journey." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPtaVEl-zWWx4V-mWOOyqygA7ztMYsBXIORUg3hU83HNw5Ds41aMHdeGa2wDXuRGxMJcIad7m8RyT5Fzd5ODK2rkCN2D2NlOYXR9A2sPXIJ3sixvLMdjsCsWt2nvtddxtI6tmwhUg7cGBDPgl8JBUZBY6lnigBFUQwU0Ql_hgN7jvf6ZKJANhQIXycV_TCJABH9Dj8tVFQRXjBwcXcam_9Uz_RPwZSmt-ua-dpRMJu04YozpbypWnFFkCrnve_PYF0Bb3XARIEC-I"/>
+</div>
+<div class="w-full md:w-2/3">
+<div class="flex items-center gap-base mb-base text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">luggage</span>
+<h3 class="font-headline-md text-headline-md">Packing Essentials</h3>
+</div>
+<p class="text-on-surface-variant mb-md leading-relaxed">
+                            India's climate varies drastically. Being prepared means comfort and respect for local sensibilities.
+                        </p>
+<ul class="space-y-sm">
+<li class="flex items-start gap-base">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="font-body-md"><strong>Light cotton:</strong> Perfect for summer heat and humidity.</span>
+</li>
+<li class="flex items-start gap-base">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="font-body-md"><strong>Warm layers:</strong> Essential for winter in the North or high altitudes.</span>
+</li>
+<li class="flex items-start gap-base">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="font-body-md"><strong>Comfortable footwear:</strong> Slip-ons are great for frequent temple visits.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Budget Tips -->
+<div class="md:col-span-4 bg-secondary-fixed text-on-secondary-fixed rounded-xl p-lg flex flex-col justify-between shadow-sm hover:scale-[1.01] transition-transform duration-300">
+<div>
+<div class="flex items-center gap-base mb-md">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">payments</span>
+<h3 class="font-headline-md text-headline-md">Budget Travel</h3>
+</div>
+<p class="font-body-md mb-lg">Traveling India doesn't have to break the bank. Local ways are often the most rewarding.</p>
+<div class="space-y-md">
+<div class="flex items-center gap-md p-base bg-white/20 rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined">train</span>
+<div class="text-sm"><strong>Indian Railways:</strong> Economical and scenic way to traverse long distances.</div>
+</div>
+<div class="flex items-center gap-md p-base bg-white/20 rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined">event</span>
+<div class="text-sm"><strong>Advance booking:</strong> Save up to 40% on luxury hotels and flights.</div>
+</div>
+<div class="flex items-center gap-md p-base bg-white/20 rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined">restaurant</span>
+<div class="text-sm"><strong>Street food:</strong> Delicious, authentic, and incredibly cheap.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Safety Tips -->
+<div class="md:col-span-5 bg-surface-container-low rounded-xl p-lg border border-outline-variant flex flex-col shadow-sm">
+<div class="flex items-center gap-base mb-md text-error">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shield</span>
+<h3 class="font-headline-md text-headline-md">Safety Tips</h3>
+</div>
+<div class="relative w-full h-48 rounded-lg mb-md overflow-hidden">
+<img alt="Official transport" class="w-full h-full object-cover" data-alt="A clean, modern perspective of an official prepaid taxi stand at an Indian airport. The lighting is bright and clinical, with sharp focus on the yellow and black cabs lined up neatly. The scene conveys a sense of reliability and organization, using a contemporary photographic style that highlights the vibrant traditional colors of the vehicles against a sleek, modern architectural backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCPpnLHkWZY-ix0ZuFGUm8bCKJ88ZeSJotjVw3m81Cx-MFjoN2drtfmcHT2-9SyoRLlvWUYeZMqbfz8NVHdh46JZMDYOWbDEXbhHjxYUNJTLrogBiefcpUkE8Gb0I9mOFm_cjT7sa_R5EkqklNQJ8D2_rx_RU1-nhF2HdyLhG9XlFwWjtxQ8iFC0y3DNof7cL5MPm-dEzLkPmUo_lDjEzHj4FAbXBmymp_KVOeEgVj8KmSalf1b05ZUd7vHkcjSL94p7YsXNyIS88"/>
+</div>
+<p class="text-on-surface-variant font-body-md leading-relaxed mb-md">
+                        Your safety is our priority. India is generally safe for tourists, but awareness is key.
+                    </p>
+<div class="mt-auto space-y-sm">
+<div class="flex items-center gap-sm">
+<span class="p-2 bg-error/10 rounded-full text-error">
+<span class="material-symbols-outlined text-[18px]">local_taxi</span>
+</span>
+<span class="text-sm font-medium">Use official prepaid taxis or app-based cabs.</span>
+</div>
+<div class="flex items-center gap-sm">
+<span class="p-2 bg-error/10 rounded-full text-error">
+<span class="material-symbols-outlined text-[18px]">contact_emergency</span>
+</span>
+<span class="text-sm font-medium">Keep emergency contacts saved (Police: 112).</span>
+</div>
+</div>
+</div>
+<!-- Cultural Etiquette -->
+<div class="md:col-span-7 bg-primary text-on-primary rounded-xl p-lg relative overflow-hidden shadow-lg">
+<div class="relative z-10 flex flex-col h-full">
+<div class="flex items-center gap-base mb-md">
+<span class="material-symbols-outlined text-2xl">temple_hindu</span>
+<h3 class="font-headline-md text-headline-md">Cultural Etiquette</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-lg">
+<div>
+<h4 class="font-bold text-lg mb-xs">Dress Modestly</h4>
+<p class="text-on-primary/80 font-body-md text-sm leading-relaxed">
+                                    When visiting temples or rural areas, cover your shoulders and knees. Carrying a light scarf or shawl is always handy.
+                                </p>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-xs">Greetings</h4>
+<p class="text-on-primary/80 font-body-md text-sm leading-relaxed">
+                                    The traditional 'Namaste' with folded hands is universally appreciated. It’s a sign of deep respect for the divine in everyone.
+                                </p>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-xs">Shoes Matter</h4>
+<p class="text-on-primary/80 font-body-md text-sm leading-relaxed">
+                                    Always remove shoes before entering a home or a place of worship. Look for the designated shoe stand or rows of footwear.
+                                </p>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-xs">Eating Habits</h4>
+<p class="text-on-primary/80 font-body-md text-sm leading-relaxed">
+                                    Eating with your right hand is traditional. If you're unsure, observing locals is the best way to learn the rhythm.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Decorative Icon pattern -->
+<div class="absolute -right-12 -bottom-12 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[300px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Informative CTA Section -->
+<section class="bg-surface-container py-xl px-gutter">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg mb-md">Still have questions?</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl mx-auto mb-lg">
+                    Our local experts are ready to help you plan the perfect journey across the subcontinent. From hidden gems to popular landmarks, we're here for you.
+                </p>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="px-xl py-4 bg-primary text-on-primary rounded-full font-bold hover:bg-primary-container/90 transition-all" href="contact.html">Get in Touch</a>
+<a class="px-xl py-4 border-2 border-primary text-primary rounded-full font-bold hover:bg-primary/5 transition-all" href="destinations.html">Explore Destinations</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest w-full py-lg px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-center space-y-md md:space-y-0 max-w-container-max mx-auto">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-xs">Incredible India</span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">© 2024 Incredible India Tourism. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">FAQ</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Cookie Policy</a>
+</div>
+<div class="flex space-x-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors transition-opacity hover:opacity-80" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors transition-opacity hover:opacity-80" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

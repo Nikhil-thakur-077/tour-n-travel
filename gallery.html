@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Gallery</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: #f5f5f5;
+    }
+
+    /* Navbar */
+
+    .navbar{
+      width: 100%;
+      background: white;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 18px 8%;
+
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo{
+      font-size: 32px;
+      font-weight: bold;
+      color: #ff6b35;
+    }
+
+    .nav-links{
+      display: flex;
+      gap: 35px;
+      list-style: none;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      color: #222;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover{
+      color: #ff6b35;
+    }
+
+    .trip-btn{
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+
+      background: #ff6b35;
+      color: white;
+
+      font-size: 16px;
+      cursor: pointer;
+
+      transition: 0.3s;
+    }
+
+    .trip-btn:hover{
+      background: #e85a2a;
+    }
+
+    /* Gallery Heading */
+
+    .gallery-heading{
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .gallery-heading h4{
+      color: #ff6b35;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    .gallery-heading h1{
+      font-size: 60px;
+      color: #222;
+    }
+
+    /* Gallery Grid */
+
+    .gallery{
+      width: 90%;
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+      gap: 25px;
+
+      padding-bottom: 60px;
+    }
+
+    /* Card */
+
+    .gallery-card{
+      position: relative;
+
+      overflow: hidden;
+      border-radius: 20px;
+
+      cursor: pointer;
+
+      height: 500px;
+    }
+
+    .gallery-card img{
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      transition: 0.5s;
+    }
+
+    .gallery-card:hover img{
+      transform: scale(1.08);
+    }
+
+    /* Overlay */
+
+    .overlay{
+      position: absolute;
+      inset: 0;
+
+      background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.1)
+      );
+
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+
+      padding: 25px;
+    }
+
+    .location{
+      background: #f4b400;
+      color: #222;
+
+      width: fit-content;
+
+      padding: 8px 16px;
+
+      border-radius: 30px;
+
+      font-size: 14px;
+      font-weight: bold;
+
+      margin-bottom: 15px;
+    }
+
+    .place-name{
+      color: white;
+      font-size: 42px;
+      font-weight: bold;
+    }
+
+    /* Different Heights */
+
+    .small{
+      height: 350px;
+    }
+
+    .medium{
+      height: 450px;
+    }
+
+    .large{
+      height: 550px;
+    }
+
+    /* Mobile */
+
+    @media(max-width: 768px){
+
+      .navbar{
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .gallery-heading h1{
+        font-size: 40px;
+      }
+
+      .gallery-card{
+        height: 400px !important;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+   <header> 
+    
+    <a id="logo" href="index.html"><img src="./pictures/logo.png" style="height: 50px; width: 60px;"></a>
+    <h2>Incredible India Travel Guide </h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="tour-tips.html">Travel Tips</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+  </header>
+
+  <!-- Heading -->
+
+  <section class="gallery-heading">
+
+    <h4>GALLERY</h4>
+
+    <h1>Explore Incredible Places</h1>
+
+  </section>
+
+  <!-- Gallery -->
+
+  <section class="gallery">
+
+    <!-- Card 1 -->
+
+    <div class="gallery-card large">
+
+      <img src="valley.jpg" alt="Valley">
+
+      <div class="overlay">
+
+        <div class="location">UTTARAKHAND</div>
+
+        <h2 class="place-name">
+          Valley of Flowers
+        </h2>
+
+      </div>
+
+    </div>
+
+    <!-- Card 2 -->
+
+    <div class="gallery-card medium">
+
+      <img src="kutch.jpg" alt="Kutch">
+
+      <div class="overlay">
+
+        <div class="location">GUJARAT</div>
+
+        <h2 class="place-name">
+          Rann of Kutch
+        </h2>
+
+      </div>
+
+    </div>
+
+    <!-- Card 3 -->
+
+    <div class="gallery-card large">
+
+      <img src="lake.jpg" alt="Lake">
+
+      <div class="overlay">
+
+        <div class="location">MANIPUR</div>
+
+        <h2 class="place-name">
+          Loktak Lake
+        </h2>
+
+      </div>
+
+    </div>
+
+    <!-- Card 4 -->
+
+    <div class="gallery-card medium">
+
+      <img src="waterfall.jpg" alt="Waterfall">
+
+      <div class="overlay">
+
+        <div class="location">CHHATTISGARH</div>
+
+        <h2 class="place-name">
+          Chitrakote Falls
+        </h2>
+
+      </div>
+
+    </div>
+
+    <!-- Card 5 -->
+
+    <div class="gallery-card large">
+
+      <img src="monastery.jpg" alt="Monastery">
+
+      <div class="overlay">
+
+        <div class="location">ARUNACHAL PRADESH</div>
+
+        <h2 class="place-name">
+          Tawang Monastery
+        </h2>
+
+      </div>
+
+    </div>
+
+    <!-- Card 6 -->
+
+    <div class="gallery-card small">
+
+      <img src="ladakh.jpg" alt="Ladakh">
+
+      <div class="overlay">
+
+        <div class="location">LADAKH</div>
+
+        <h2 class="place-name">
+          Leh Palace
+        </h2>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>

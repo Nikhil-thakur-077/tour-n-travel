@@ -1,0 +1,363 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+
+/* index css */
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(255, 255, 255);
+}
+header{
+ background-color: #7cd8d8;
+ color: #23b5ce;
+ height: 100px;
+ position: sticky;
+}
+
+h2{
+    display: inline;
+    position: absolute;
+    text-decoration: none;
+    text-align: justify;
+   color: red;
+    left: 90px;
+    
+}
+ 
+nav{
+    display: inline;
+    position: absolute;
+    right: 100px;
+    top: 15px;
+    text-decoration: none;
+   
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(133, 9, 9);
+    font-size: 20px;
+}
+#logo{
+
+    display: inline;
+    padding-left: 10px;
+    position: absolute;
+    top:5px;
+    height: 60px;
+    width: 70px;
+     
+}
+.bg-h1{
+     
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* featured destination css */
+
+.featured-destinations {
+    padding: 60px 5%;
+    background-color: #f9f9f9;
+}
+
+.featured-Destinations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fetured-cards {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.fetured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.feture-discription {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 25px 25px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    color: white;
+    text-align: left;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
+}
+
+.fetured-name {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.fetured-short-dis {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    color: rgba(255,255,255,0.9);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.fetured-cards:hover .fetured-img {
+    transform: scale(1.1);
+}
+
+.fetured-cards:hover .feture-discription {
+    transform: translateY(-5px);
+}
+
+.fetured-cards:hover .fetured-short-dis {
+    opacity: 1;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    .featured-Destinations {
+        grid-template-columns: 1fr;
+    }
+    .fetured-cards {
+        height: 300px;
+    }
+}
+
+
+
+
+/* contact form css */
+
+.contact-form{
+      text-align: center;
+      justify-content: center; 
+      
+}
+
+#name:focus {
+    border-color: rgb(255, 9, 83);
+    outline:none;
+}
+#name{
+    height: 25px;  
+    width: 200px;
+    background-color: rgb(133, 245, 193);
+
+}
+#email:focus {
+    border-color: rgb(255, 9, 83);
+    outline:none;
+}
+#email{
+    height: 25px;  
+    width: 200px;
+    background-color: rgb(133, 245, 193);
+}
+#textarea:focus {
+    border-color: rgb(255, 9, 83);
+    outline:none;
+}
+#textarea{
+    width: 200px;
+    background-color: rgb(133, 245, 193);
+    border: 2px solid rgb(95, 68, 68);
+}
+ 
+#contact-submit-button{
+    background-color: rgb(206, 133, 228);
+    color: rgb(0, 0, 0);
+    height: 30px;
+    
+    border: 2px solid rgb(247, 213, 245);
+    
+}
+#contact-submit-button:hover{
+    background-color: rgb(207, 12, 149);
+   
+}
+.contact-info{
+    align-items: center;
+    text-align: center;
+}
+#heading-contact{
+    text-align: center;
+    height: 30px;
+    color: rgb(111, 100, 122);
+}
+
+
+
+/* destination css */
+
+#head-destinations{
+    text-align: center;
+    color: lightcoral;
+}
+
+/* Grid Container */
+.Destinations{
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+
+    /* Responsive Grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.dis-cards{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+     
+    background: white;
+    text-align: center;
+    padding: 10px;
+}
+.dis-cards:hover .dis-img{
+    transform: scale(1.05);
+}
+
+.dis-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* Button */
+.dis-inquire{
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+
+    background: #ee6f40;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dis-inquire:hover{
+    background: #ce3300;
+}
+ 
+
+.short-dis{
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.dis-name{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+
+/* Destinations page head image */
+
+.head-des-image {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#des-head-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: scale(1.1);
+    animation: zoom 20s infinite alternate;
+}
+
+@keyframes zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+.des-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    z-index: 0;
+}
+
+.des-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: rgb(213, 209, 209);
+    padding: 20px;
+    max-width: 900px;
+}
+
+.des-head-image-heading {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.des-head-font {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: 300;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+ 

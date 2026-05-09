@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Destinations | Incredible India</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#281900",
+                        "tertiary": "#006e2e",
+                        "on-tertiary-fixed": "#002109",
+                        "on-tertiary-fixed-variant": "#005321",
+                        "surface": "#fcf9f8",
+                        "primary-container": "#e8a317",
+                        "on-secondary-container": "#2a4486",
+                        "outline": "#837561",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#59c570",
+                        "on-secondary-fixed": "#00174a",
+                        "surface-container-high": "#eae7e7",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f6f3f2",
+                        "on-background": "#1c1b1b",
+                        "on-primary-fixed-variant": "#604100",
+                        "primary": "#7f5700",
+                        "secondary-container": "#9cb4fe",
+                        "tertiary-fixed": "#8dfa9e",
+                        "outline-variant": "#d6c4ad",
+                        "primary-fixed": "#ffdeae",
+                        "secondary": "#435b9f",
+                        "surface-tint": "#7f5700",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#004e1e",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#71dd85",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "primary-fixed-dim": "#ffba3e",
+                        "surface-container": "#f0eded",
+                        "on-surface": "#1c1b1b",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary-container": "#5b3d00",
+                        "secondary-fixed": "#dbe1ff",
+                        "on-surface-variant": "#514534",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "background": "#fcf9f8",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-variant": "#e5e2e1",
+                        "inverse-surface": "#313030",
+                        "inverse-primary": "#ffba3e",
+                        "secondary-fixed-dim": "#b3c5ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Noto Serif"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .scrim-gradient {
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-xl shadow-sm">
+<nav class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+                Incredible India
+            </div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center space-x-md">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Destinations</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">Travel Tips</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-sm">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-primary-container/10 p-2 rounded-full transition-all duration-300">search</button>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-200">
+                    Plan My Trip
+                </button>
+</div>
+</nav>
+</header>
+<main class="pt-xl">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<img alt="The Taj Mahal" class="absolute inset-0 w-full h-full object-cover" data-alt="A cinematic, wide-angle shot of the Taj Mahal at sunrise, with soft golden light bathing the white marble architecture. The iconic monument is perfectly reflected in the still waters of the long pool in the foreground. The sky is a gradient of pale orange and soft lavender, creating a serene and majestic atmosphere that embodies the spiritual essence of India. The image has a crisp, high-end travel photography aesthetic with rich textures and deep dynamic range." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkLVj6mkKAOCLSOnOf5D-gbQyk4_7d-U8lM4U29qDzpw63ly6NDiwdIXJ8cwlrfq_0oNprDaHll26UWE3u-K3pH7EbF9OIho7Qzszs6tOUbR2KR1qSaEkNPZcmI55gEq8IxKZ9OVhZCzDYrZG0VBAmuKOLwbp4yG-KEVFXsi0e7ZRCf0iXtOQSqTE4EdvFuGJmygJo4whQWgjJeZlGWv_eHuKQYr2nUdbuqBthmcR5riRonuyRy64GEkuNpNAj0LhfH3uJqwb5bV4"/>
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="relative z-10 text-center px-gutter max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-white mb-md">Our Destinations</h1>
+<p class="font-body-lg text-body-lg text-white/90">
+                    Explore top Indian travel destinations with must-visit places, local tips, and cultural experiences!
+                </p>
+</div>
+</section>
+<!-- Featured Destinations (Bento Grid Style) -->
+<section class="max-w-container-max mx-auto px-gutter py-xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-md h-auto md:h-[900px]">
+<!-- Jaipur Section -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container shadow-sm border border-outline-variant/20 flex flex-col md:flex-row">
+<div class="md:w-1/2 h-80 md:h-full relative overflow-hidden">
+<img alt="Jaipur Palace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A vibrant landscape of the Hawa Mahal in Jaipur, showcasing its intricate pink sandstone honeycomb windows under a clear bright blue sky. The lighting is harsh afternoon sun that creates sharp shadows and highlights the architectural details of the facade. Street activity is visible at the bottom, adding a sense of local life. The overall aesthetic is warm, saturated, and authentically Rajasthani." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKgESmM-ePiMVSgRIBOG_SMecQGYzyyphC8CxqFZjkbtYLcBPtFsP0YATmXzuvmPGHj7M9-7s33U4H2XY1AYDHj8ZbbSitvnPSQvJGOOg5J-RJIpY6SQ34cVnAYlkbAQ7TwXaZENwAPcQWF-_cUTkKXQytK-ZH5g5To1P3a0vDt1ABC9sYYZVQUn7iW85rSWljU-nl0a0LaEUphtrzTW4zH_s7iKih5AzLKbP11RNURnlXhQGQHQ1n4EAhS6qPvlpp5gIjbI_QYs"/>
+</div>
+<div class="md:w-1/2 p-lg flex flex-col justify-center">
+<span class="inline-block bg-primary-container/20 text-primary px-3 py-1 rounded-full text-label-md font-label-md mb-base w-fit">The Pink City</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Jaipur, Rajasthan</h2>
+<div class="space-y-sm">
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary" data-weight="fill">calendar_month</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Best Time to Visit</p>
+<p class="font-body-md text-body-md">October – March</p>
+</div>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary" data-weight="fill">account_balance</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Top Attractions</p>
+<p class="font-body-md text-body-md">Amber Fort, Hawa Mahal, City Palace</p>
+</div>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary" data-weight="fill">restaurant</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Local Food</p>
+<p class="font-body-md text-body-md">Dal Baati Churma, Ghewar</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Varanasi Section -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low shadow-sm border border-outline-variant/20">
+<div class="h-64 md:h-1/2 relative overflow-hidden">
+<img alt="Varanasi Ghats" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A spiritual evening scene at the Ganga Aarti in Varanasi. Multiple priests are performing synchronized rituals with large flaming brass lamps on high pedestals. The air is thick with incense smoke catching the golden orange light of the fires. In the background, the dark Ganges river reflects the amber glow, while thousands of devotees watch in silent reverence. The style is moody, atmospheric, and rich in warm tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0ZG64V4-jc4CzrQ3-l_SaKZyH52xmT2SYMMJr939b9Kg_QNqqKbfg7AU2cvAs1E3xOdYYLPpCADkirIP2zXPt_ZWELkeIcP6cIXOT2iM0XuqKqLHf3qG4vBjnSDAIqZZmFLEofa8qZLpVQnDPgaaL1enHi9Ks9Rp44T30mZeoBLvmWEaAL-TXWC2dNTu1S7_ZNl3T9PZnezC56LvY4XdnlBsHyIEjBsOs2uRXVSsxBtG0tz14pUpMCSdEGIarEmfbnYhWppJx4Rw"/>
+</div>
+<div class="p-md md:p-lg flex flex-col h-1/2">
+<span class="inline-block bg-secondary-container/20 text-secondary px-3 py-1 rounded-full text-label-md font-label-md mb-base w-fit">Spiritual Heart</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Varanasi, UP</h2>
+<div class="space-y-sm">
+<p class="text-body-md text-on-surface-variant"><strong class="text-on-surface">Best Time:</strong> Oct–Mar</p>
+<p class="text-body-md text-on-surface-variant"><strong class="text-on-surface">Must See:</strong> Kashi Vishwanath, Ganga Aarti</p>
+<p class="text-body-md text-on-surface-variant"><strong class="text-on-surface">Eat:</strong> Kachori Sabzi, Malaiyyo</p>
+</div>
+<div class="mt-auto pt-md">
+<button class="text-primary font-bold hover:underline flex items-center gap-xs">
+                                Discover Spirituality <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Goa Section -->
+<div class="md:col-span-12 group relative overflow-hidden rounded-xl h-[400px]">
+<img alt="Goa Beach" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2000ms]" data-alt="A pristine tropical beach scene in South Goa at sunset. The sky is a canvas of fiery pinks and deep violets reflected on the wet shoreline where gentle turquoise waves lap at the sand. Towering coconut palm trees lean over the beach, creating dark silhouettes against the glowing horizon. The atmosphere is tranquil, luxurious, and evokes a high-end coastal resort feeling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqcGLdekO40xEtmuzCcD0N5XxwFOzPzs1ux6DDhR46-2X9Ze33Ya1Djva1_rr2XZR13j7nTsS61aW2XyZQMY1979g8GRCbY6-o-tx_0xoBrrMyLP_W-S5RVr3iRTDoh5_ymBLDYFUMY-zewHizSJCNtSs--VuifR2a7PbvWM0SQEbCEOyqpdFiAEFHYKKe3F3rJYBv8-f2le3k6nIy13g6XXeNSo1A8rDCaohMrxMoyw7R5Q6m8VN9QFAkakWz9CDNqAhYUL5jU64"/>
+<div class="absolute inset-0 scrim-gradient"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full flex flex-col md:flex-row md:items-end md:justify-between">
+<div>
+<span class="inline-block bg-tertiary-container/30 text-white px-3 py-1 rounded-full text-label-md font-label-md mb-base w-fit backdrop-blur-md border border-white/20">Beach &amp; Heritage</span>
+<h2 class="font-headline-xl text-headline-xl text-white">Goa</h2>
+<p class="text-white/80 max-w-xl font-body-lg">Where Portuguese history meets turquoise waters. Best visited Nov–Feb for the perfect tropical weather.</p>
+</div>
+<div class="mt-md md:mt-0 flex gap-lg text-white">
+<div>
+<p class="text-label-md font-label-md opacity-70 uppercase tracking-widest">Attractions</p>
+<p class="text-body-md">Dudhsagar, Basilica</p>
+</div>
+<div>
+<p class="text-label-md font-label-md opacity-70 uppercase tracking-widest">Delicacy</p>
+<p class="text-body-md">Bebinca, Patal Bhaji</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Other Noteworthy Locations -->
+<section class="bg-surface-container-low py-xl">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex items-end justify-between mb-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">More Treasures to Explore</h2>
+<p class="text-on-surface-variant font-body-md max-w-xl">From the high altitude deserts to the pristine islands, India's diversity is boundless.</p>
+</div>
+<button class="hidden md:flex items-center gap-xs font-label-md text-label-md text-primary hover:gap-md transition-all">
+                        VIEW ALL <span class="material-symbols-outlined">arrow_right_alt</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
+<!-- Kerala -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-sm shadow-sm">
+<img alt="Kerala Backwaters" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A peaceful houseboat floating on the emerald backwaters of Alleppey, Kerala. The scene is framed by lush, vibrant green palm trees on the narrow banks. The lighting is soft and diffused, characteristic of a humid tropical morning. The water is calm with gentle ripples from the boat, creating a serene, idyllic mood of relaxation and natural beauty." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy-JAVopEcEEEdsKhHC9j-lSCgs9W716pLAq5nGs-uNrNxWMBVfxaCI-PdIgvkQY2d7M1LtXgVScKFnr-JA_zoYUqFdnz0yOl39k2eszssth9aFGwfU5-IN4Z1aL7Yn6H8V10qHb3FxPv-GvuFj0c0WNXRt5DefYviGYr7SpwGrXekCjSmygpeN9WVpSo0bt78NEKO3zjaO0jHSJUiVfEbiilw52YHGgnUN_K9ZiRTWC9BOJqSnpklkGkt7KvGlTQyHIIQ3jv-K64"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur text-primary text-[12px] font-bold px-3 py-1 rounded-full shadow-sm">NATURE</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md">Kerala</h3>
+<p class="text-on-surface-variant text-body-md">Backwaters &amp; Tea Gardens</p>
+</div>
+<!-- Rishikesh -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-sm shadow-sm">
+<img alt="Rishikesh" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="The Lakshman Jhula suspension bridge stretching across the bright turquoise Ganges river in Rishikesh. The background features the foothills of the Himalayas covered in misty forest. Tiny white temples dot the riverside. The image captures the fresh, airy atmosphere of the world's yoga capital during a cool dawn." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC_l7scyfwraq5PuDlxZ0ArFEJf6LICQ7mBkw1lkpzt6pNb664tCmfE0kYEWkQHyBsHsTryPIjtrq7qHHcxGI64W_IjVqVcTR1_kBEQd9tB_1QaYmexUjJXP0VXcSfr_Gmea4H-lw2bfUgoWvvp4LKromxAtDRXAF3nm8H-LrPbemdwExLbPze-oM0pdenLkbdX_2dEfoNTQSnRgMFGVA69-XJF9xxhFirz8NlyMVZ1Ks7adjA8r-NFUK6UByvSLM3a5IdfpJtKDA"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur text-primary text-[12px] font-bold px-3 py-1 rounded-full shadow-sm">ADVENTURE</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md">Rishikesh</h3>
+<p class="text-on-surface-variant text-body-md">Yoga Capital of the World</p>
+</div>
+<!-- Leh-Ladakh -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-sm shadow-sm">
+<img alt="Ladakh" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="The stark and stunning landscape of Leh Ladakh, featuring a winding asphalt road cutting through a vast, high-altitude desert. Jagged, snow-capped mountains loom in the background under an intensely deep blue sky. The lighting is crisp and clear, highlighting the rugged textures of the rocky terrain. The scene evokes a sense of epic isolation and raw natural power." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHt2ZNsHA_nppxNexAVeDWdqS0BkUO9l4G6Bc-fr3kxmkyQdv-cBwNeLtPoFep7bU7SA7XsFDw7jnz48cH8T4hY-sAby1bpO9tkas5MMWk0lw_T4Gfb1cptxvuN54RVGq-0WX30XARZE0u8OAe_TdMsQVsn11TRr79QiSZlAuH9wYQ0wxmt8QANup4oWuXFoOEGRwb0YHFqqlRzMbKOni-gQZop9IbJGDrK6KFXMijYOF7aiFNmNJfjThFoFDAjcsGOgeWeU6TbiM"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur text-primary text-[12px] font-bold px-3 py-1 rounded-full shadow-sm">MAJESTIC</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md">Leh-Ladakh</h3>
+<p class="text-on-surface-variant text-body-md">High Altitude Desert</p>
+</div>
+<!-- Andaman -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-sm shadow-sm">
+<img alt="Andaman" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A breathtaking view of Radhanagar Beach in the Andaman Islands. The water is a brilliant gradient from crystal clear white at the shore to deep azure. Ancient tropical trees with gnarled roots grow right up to the powdery white sand. The sun is shining brightly, making the entire scene glow with a high-contrast, paradise-like quality. Clean, modern, and serene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcYozuc367PsJlSiU7xJTv2lpsH7urWJAfrJ7pDSmjOkE-bQGqvi-HGT5Qb2MCW-orqz2mJLFT8o2NSa95JILQftlcUNSRxUbUVOWrDEwGt8ol27Ok_WJTTY0ZGuFwIKwObaEJhL9vFNUKxUKUAqfk8aT6ifJWHGHREY1_0oQyAeTzySR6rlyReL-KhmfVlQ_x0vsYJTLeGwj4GbBSJ6MexA-E_z5WeyaoJk0yUNhonaXMmmUVV4f4dSqj9dBYtxxxjycIi6H6aKE"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur text-primary text-[12px] font-bold px-3 py-1 rounded-full shadow-sm">ISLANDS</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md">Andaman</h3>
+<p class="text-on-surface-variant text-body-md">Pristine White Beaches</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="max-w-container-max mx-auto px-gutter py-xl">
+<div class="bg-primary-container rounded-2xl p-lg md:p-xl flex flex-col md:flex-row items-center justify-between text-on-primary-container relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline-lg text-headline-lg mb-sm">Ready for your adventure?</h2>
+<p class="text-body-lg max-w-md opacity-90">Plan your next Indian journey today and discover the magic of incredible landscapes.</p>
+</div>
+<div class="mt-lg md:mt-0 flex flex-col sm:flex-row gap-md relative z-10 w-full md:w-auto">
+<input class="bg-white/20 border-white/30 text-white placeholder:text-white/60 rounded-full px-6 py-3 focus:ring-white focus:border-white min-w-[280px]" placeholder="Your email address" type="email"/>
+<button class="bg-white text-primary font-bold px-8 py-3 rounded-full hover:bg-surface-container transition-colors shadow-lg">Start Planning</button>
+</div>
+<!-- Decorative background circles -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-on-primary-container/10 rounded-full -ml-10 -mb-10"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-highest w-full py-lg px-gutter border-t border-outline-variant/10">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start md:items-center space-y-md md:space-y-0 mb-lg">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed font-bold">
+                Incredible India
+            </div>
+<div class="flex flex-wrap gap-md md:gap-lg">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">FAQ</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Cookie Policy</a>
+</div>
+</div>
+<div class="max-w-container-max mx-auto pt-md border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center text-on-surface-variant">
+<p class="font-body-md text-body-md opacity-70">© 2024 Incredible India Tourism. All rights reserved.</p>
+<div class="flex gap-md mt-sm md:mt-0">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">public</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">social_leaderboard</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">camera</span>
+</div>
+</div>
+</footer>
+</body></html>

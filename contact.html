@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    /* Contact Section */
+
+    .contact-section{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .contact-container{
+      width: 100%;
+      max-width: 1100px;
+
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    /* Left Side */
+
+    .contact-info{
+      background: #d86840;
+      color: white;
+      padding: 50px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-info h1{
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p{
+      line-height: 1.8;
+      margin-bottom: 30px;
+      color: #f1f1f1;
+    }
+
+    .info-box{
+      margin-bottom: 20px;
+    }
+
+    .info-box h3{
+      margin-bottom: 5px;
+    }
+
+    /* Right Side */
+
+    .contact-form{
+      padding: 50px 40px;
+    }
+
+    .contact-form h2{
+      font-size: 32px;
+      margin-bottom: 25px;
+      color: #222;
+    }
+
+    .input-box{
+      margin-bottom: 20px;
+    }
+
+    .input-box input,
+    .input-box textarea{
+      width: 100%;
+      padding: 14px;
+
+      border: 1px solid #ccc;
+      border-radius: 10px;
+
+      font-size: 16px;
+      outline: none;
+    }
+
+    .input-box textarea{
+      resize: none;
+      height: 140px;
+    }
+
+    .input-box input:focus,
+    .input-box textarea:focus{
+      border-color: #ff6b35;
+    }
+
+    .submit-btn{
+      width: 100%;
+      padding: 15px;
+
+      border: none;
+      border-radius: 10px;
+
+      background: #ff6b35;
+      color: white;
+
+      font-size: 18px;
+      cursor: pointer;
+
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover{
+      background: #e85a2a;
+    }
+
+    /* Mobile */
+
+    @media(max-width: 768px){
+
+      .contact-info{
+        text-align: center;
+      }
+
+      .contact-info h1{
+        font-size: 32px;
+      }
+
+      .contact-form{
+        padding: 40px 25px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+   <header> 
+    
+    <a id="logo" href="index.html"><img src="./pictures/logo.png" style="height: 50px; width: 60px;"></a>
+    <h2>Incredible India Travel Guide </h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="tour-tips.html">Travel Tips</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+  </header>
+  <section class="contact-section">
+
+    <div class="contact-container">
+
+      <!-- Left Side -->
+
+      <div class="contact-info">
+
+        <h1>Contact Us</h1>
+
+        <p>
+          Have questions about your next trip? 
+          We are here to help you plan your perfect journey.
+        </p>
+
+        <div class="info-box">
+          <h3>📍 Address</h3>
+          <p>DSVV,Haridwar</p>
+        </div>
+
+        <div class="info-box">
+          <h3>📞 Phone</h3>
+          <p>+91 9816854989</p>
+        </div>
+
+        <div class="info-box">
+          <h3>✉ Email</h3>
+          <p>nt3959367@gmail.com</p>
+        </div>
+
+      </div>
+
+      <!-- Right Side -->
+
+      <div class="contact-form">
+
+        <h2>Send Message</h2>
+
+        <form>
+
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+
+          <div class="input-box">
+            <input type="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="input-box">
+            <input type="text" placeholder="Subject">
+          </div>
+
+          <div class="input-box">
+            <textarea placeholder="Write your message"></textarea>
+          </div>
+
+          <button class="submit-btn">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
