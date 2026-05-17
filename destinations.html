@@ -8,17 +8,27 @@
 </head>
 <body>
 
-     <header> 
-    <a id="logo" href="index.html"><img src="./pictures/logo.png" style="height: 50px; width: 60px;"></a>
-    <h2>Incredible India Travel Guide </h2>
+   <header> 
+    <div class="header-left">
+        <a id="logo" href="index.html"><img src="./pictures/logo.png" alt="Logo"></a>
+        <h2 class="header-title">Incredible India</h2>
+    </div>
+
+    <div class="header-center">
+        <div class="search-bar">
+            <input type="text" placeholder="Search destinations...">
+            <button>🔍</button>
+        </div>
+    </div>
+
     <nav>
         <a href="index.html">Home</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="tour-tips.html">Travel Tips</a>
+        <a href="destinations.html" class="active">Destinations</a>
+        <a href="travel_tips.html">Travel Tips</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-btn">Plan a Trip</a>
     </nav>
-    
   </header>
 
    
@@ -34,101 +44,136 @@
 </section>
 
 
-<div id="des-packages">
-    <h1 id="des-package-head">Our Top Packages</h1>
-    <div id="head-packages-des">
-
-    <div id="first-package"> 
-        <img src="" alt="">
-        <img src="" alt="">
-        <div id="first-package-discription">
-            <h3 class="first-package-name">
-                Jaipur: The Pink City
-            </h3>
-            <p class="first-package-short-dis">
-                
-            </p>
-            <p id="details">
-                this is a best time to visit in October – March
-            </p>
-            <p id="food ">restaurant
-Local Food
-Dal Baati Churma, Ghewar</p>
-            
-        </div>
-    </div>
-
-    <div id="second-package"> 
-        <img src="" alt="">
-        <img src="" alt="">
-        <div id="second-package-discription">
-            <h3 class="second-package-name">
-                Goa
-            </h3>
-            <p class="second-package-short-dis">
-                
-            </p>
-        </div>
-    </div>
-
-    </div>
-</div>
+<h2 class="section-title">Explore Regional Gems</h2>
 
 
     <div class="Destinations">
 
         <div class="dis-cards"> 
-        <img class="dis-img" src="pictures/manali1.png" alt="manali">
-        <div id="discription">
-            <h3 class="dis-name"> Manali</h3>
-            <p class="short-dis">The spiritual heart of India, where life and death dance on the banks of the Ganges.</p>
-            <button class="dis-inquire"> Inquire Details</button>  
+            <div class="dis-img-container">
+                <img class="dis-img" src="pictures/manali1.png" alt="manali">
+            </div>
+            <div class="dis-content-box">
+                <h3 class="dis-name">Manali</h3>
+                <p class="short-dis">Experience the thrill of the Himalayas with snow-capped peaks and adventure sports.</p>
+                <button class="dis-inquire">Inquire Details</button>  
+            </div>
         </div>
-        </div>
-        
 
         <div class="dis-cards"> 
-        <img class="dis-img" src="pictures/goa.png" alt="Goa">
-        <div id="discription">
-            <h3 class="dis-name"> Goa</h3>
-            <p class="short-dis">Stunning beaches, Portuguese heritage, and a lively, soulful nightlife.</p>
-            <button class="dis-inquire"> Inquire Details</button>  
+            <div class="dis-img-container">
+                <img class="dis-img" src="pictures/goa.png" alt="Goa">
+            </div>
+            <div class="dis-content-box">
+                <h3 class="dis-name">Goa</h3>
+                <p class="short-dis">Relax on sun-kissed beaches and enjoy the vibrant culture and nightlife of coastal India.</p>
+                <button class="dis-inquire">Inquire Details</button>  
+            </div>
         </div>
-        </div>
-        
 
         <div class="dis-cards"> 
-        <img class="dis-img" src="pictures/jaipur.png" alt="jaipur">
-        <div id="discription">
-            <h3 class="dis-name">Jaipur: The Pink City</h3>
-            <p class="short-dis">Famous for its royal palaces and vibrant bazaars, experience the grandeur of the Rajput era.</p>
-            <button class="dis-inquire"> Inquire Details</button>  
+            <div class="dis-img-container">
+                <img class="dis-img" src="pictures/jaipur.png" alt="jaipur">
+            </div>
+            <div class="dis-content-box">
+                <h3 class="dis-name">Jaipur</h3>
+                <p class="short-dis">The Pink City offers a journey through royal history with majestic forts and palaces.</p>
+                <button class="dis-inquire">Inquire Details</button>  
+            </div>
         </div>
-        </div>
-
 
         <div class="dis-cards"> 
-        <img class="dis-img" src="pictures/varanasi.png" alt="varanasi">
-        <div id="discription">
-            <h3 class="dis-name">Varanasi</h3>
-            <p class="short-dis">The spiritual heart of India with ancient temples and the sacred Ganges.</p>
-            <button class="dis-inquire"> Inquire Details</button>  
+            <div class="dis-img-container">
+                <img class="dis-img" src="pictures/varanasi.png" alt="varanasi">
+            </div>
+            <div class="dis-content-box">
+                <h3 class="dis-name">Varanasi</h3>
+                <p class="short-dis">Witness the spiritual essence of India on the sacred banks of the River Ganges.</p>
+                <button class="dis-inquire">Inquire Details</button>  
+            </div>
         </div>
-        </div>
-
 
         <div class="dis-cards"> 
-            <img class="dis-img" src="pictures/kedarnath.png" alt="Kedarnath">
-            <div id="discription">
+            <div class="dis-img-container">
+                <img class="dis-img" src="pictures/kedarnath.png" alt="Kedarnath">
+            </div>
+            <div class="dis-content-box">
                 <h3 class="dis-name">Kedarnath</h3>
                 <p class="short-dis">The spiritual heart of India, where life and death dance on the banks of the Ganges.</p>
-                <button class="dis-inquire"> Inquire Details</button>  
+                <button class="dis-inquire">Inquire Details</button>  
             </div>
-        </div>  
+        </div>
 
+        <div class="dis-cards"> 
+            <div class="dis-img-container">
+                <img class="dis-img" src="pictures/kerala.png" alt="Kerala">
+            </div>
+            <div class="dis-content-box">
+                <h3 class="dis-name">Kerala</h3>
+                <p class="short-dis">Navigate the peaceful backwaters and lush tea gardens of God's Own Country.</p>
+                <button class="dis-inquire">Inquire Details</button>  
+            </div>
+        </div>
+
+        <div class="dis-cards"> 
+            <div class="dis-img-container">
+                <img class="dis-img" src="pictures/andaman.png" alt="Andaman">
+            </div>
+            <div class="dis-content-box">
+                <h3 class="dis-name">Andaman</h3>
+                <p class="short-dis">Explore untouched coral reefs and pristine white sand beaches in the Bay of Bengal.</p>
+                <button class="dis-inquire">Inquire Details</button>  
+            </div>
+        </div>
+
+        <div class="dis-cards"> 
+            <div class="dis-img-container">
+                <img class="dis-img" src="pictures/ladakh.png" alt="Ladakh">
+            </div>
+            <div class="dis-content-box">
+                <h3 class="dis-name">Ladakh</h3>
+                <p class="short-dis">Discover the rugged beauty of high-altitude deserts and ancient Buddhist monasteries.</p>
+                <button class="dis-inquire">Inquire Details</button>  
+            </div>
+        </div>
+
+        <div class="dis-cards"> 
+            <div class="dis-img-container">
+                <img class="dis-img" src="pictures/rishikesh.png" alt="Rishikesh">
+            </div>
+            <div class="dis-content-box">
+                <h3 class="dis-name">Rishikesh</h3>
+                <p class="short-dis">Find peace in the yoga capital or thrill in white-water rafting on the Ganges.</p>
+                <button class="dis-inquire">Inquire Details</button>  
+            </div>
+        </div>
 
     </div>  
 
-
+<footer>
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>About Us</h3>
+            <p>Incredible India Travel Guide is your ultimate companion for exploring the beauty and diversity of India. We provide expert advice and curated destinations.</p>
+        </div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="travel_tips.html">Travel Tips</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <p>Email: nt3959367@gmail.com</p>
+            <p>Phone: +91 9816854989</p>
+            <p>Address: DSVV, haridwar, India</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Incredible India Travel Guide. All rights reserved.
+    </div>
+</footer>
 </body>
 </html>

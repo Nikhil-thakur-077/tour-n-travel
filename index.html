@@ -8,16 +8,26 @@
 </head>
 <body>
 
-  <header> 
-    
-    <a id="logo" href="index.html"><img src="./pictures/logo.png" style="height: 50px; width: 60px;"></a>
-    <h2>Incredible India Travel Guide </h2>
+   <header> 
+    <div class="header-left">
+        <a id="logo" href="index.html"><img src="./pictures/logo.png" alt="Logo"></a>
+        <h2 class="header-title">Incredible India</h2>
+    </div>
+
+    <div class="header-center">
+        <div class="search-bar">
+            <input type="text" placeholder="Search destinations...">
+            <button>🔍</button>
+        </div>
+    </div>
+
     <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="destinations.html">Destinations</a>
-        <a href="tour-tips.html">Travel Tips</a>
+        <a href="travel_tips.html">Travel Tips</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-btn">Plan a Trip</a>
     </nav>
   </header>
 
@@ -32,9 +42,28 @@
     </div>
 </section>
 
-<!-- Featured Destinations -->
+<!-- Why Choose India Section -->
+<section class="home-info-section">
+    <div class="home-info-content">
+        <h2>Discover the Magic of India</h2>
+        <p>
+            From the snow-capped Himalayas in the north to the sun-drenched beaches of the south, India is a land of incredible diversity and timeless beauty. Our travel guide helps you navigate the vibrant cultures, ancient traditions, and breathtaking landscapes of this extraordinary subcontinent.
+        </p>
+        <p>
+            Whether you're seeking spiritual enlightenment in Varanasi, royal grandeur in Jaipur, or tranquil backwaters in Kerala, we provide the insights and tips you need for an unforgettable journey.
+        </p>
+        <a href="destinations.html" class="nav-btn" style="margin-left: 0; display: inline-block;">Explore Destinations</a>
+    </div>
+    <div class="home-info-image">
+        <img src="pictures/india_hero.png" alt="Incredible India">
+    </div>
+</section>
 
+<!-- Featured Destinations -->
 <section class="featured-destinations ">
+    
+    <h2 class="section-title">Featured Destinations</h2>
+
 
     <div class="featured-Destinations">
 
@@ -73,13 +102,69 @@
         </div>
         </div>
 
-
-           
-
-
     </div>  
 </section>
-   
 
+<!-- Call to Action Section -->
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Ready to Explore India?</h2>
+        <p>Book your personalized tour guide and discover the hidden gems of India with our expert team.</p>
+        <a href="contact.html" class="nav-btn">Start Planning Your Trip</a>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-container" style="max-width: 900px; margin: 0 auto;">
+        
+        <div class="faq-item">
+            <h4>What is the best time to visit India?</h4>
+            <p>The best time to visit most of India is during the winter months (October to March) when the weather is pleasant and dry. However, the Himalayas are best visited in summer (April to June).</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Do I need a visa for India?</h4>
+            <p>Most foreign nationals require a visa to enter India. Many countries are eligible for an e-Visa, which can be applied for online at least 4 days before arrival.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Is it safe to travel solo in India?</h4>
+            <p>Yes, India is generally safe for solo travelers. However, like any other destination, it's important to stay aware of your surroundings, research your destinations, and follow local advice.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>How do I get around between cities?</h4>
+            <p>India has an extensive railway network which is a great way to see the country. For faster travel, domestic flights are affordable and connect all major cities.</p>
+        </div>
+
+    </div>
+  </section>
+<br>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>About Us</h3>
+            <p>Incredible India Travel Guide is your ultimate companion for exploring the beauty and diversity of India. We provide expert advice and curated destinations.</p>
+        </div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="travel_tips.html">Travel Tips</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <p>Email: nt3959367@gmail.com</p>
+            <p>Phone: +91 9816854989</p>
+            <p>Address: DSVV,haridwar,uttarakhand,India</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Incredible India Travel Guide. All rights reserved.
+    </div>
+</footer>
 </body>
 </html>

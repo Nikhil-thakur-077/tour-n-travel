@@ -7,19 +7,224 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <header> 
-    
-    <a id="logo" href="index.html"><img src="logo.png" style="height: 50px; width: 60px;"></a>
-    <h2>Incredible India Travel Guide </h2>
+   <header> 
+    <div class="header-left">
+        <a id="logo" href="index.html"><img src="./pictures/logo.png" alt="Logo"></a>
+        <h2 class="header-title">Incredible India</h2>
+    </div>
+
+    <div class="header-center">
+        <div class="search-bar">
+            <input type="text" placeholder="Search destinations...">
+            <button>🔍</button>
+        </div>
+    </div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="destinations.html">Destinations</a>
-        <a href="tour-tips.html">Travel Tips</a>
+        <a href="travel_tips.html" class="active">Travel Tips</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-btn">Plan a Trip</a>
     </nav>
-    
   </header>
+<section class="head-des-image">
+    <img id="des-head-img" alt="Rishikesh" class="des-tajmahal" src="pictures/rishikesh.png">
+    <div class="des-overlay"></div>
+    <div class="des-content">
+        <h1 class="des-head-image-heading">Essential Travel Tips</h1>
+        <p class="des-head-font">
+            Everything you need to know before embarking on your Indian adventure.
+        </p>
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <div>Scroll to explore</div>
+    </div>
+</section>
+
+<div class="quick-insights">
+    <div class="insight-item">
+        <span class="insight-icon">🌡️</span>
+        <div class="insight-text">
+            <strong>25°C - 35°C</strong>
+            <span>Avg. Temperature</span>
+        </div>
+    </div>
+    <div class="insight-item">
+        <span class="insight-icon">💳</span>
+        <div class="insight-text">
+            <strong>Rupee (INR)</strong>
+            <span>Local Currency</span>
+        </div>
+    </div>
+    <div class="insight-item">
+        <span class="insight-icon">🗣️</span>
+        <div class="insight-text">
+            <strong>Hindi & English</strong>
+            <span>Major Languages</span>
+        </div>
+    </div>
+    <div class="insight-item">
+        <span class="insight-icon">🕒</span>
+        <div class="insight-text">
+            <strong>GMT +5:30</strong>
+            <span>Time Zone</span>
+        </div>
+    </div>
+</div>
+
+<main class="tips-container">
+    <h2 class="section-title">Preparation & Culture</h2>
     
+    <div class="tips-grid">
+        <div class="tip-card">
+            <div class="tip-icon"><span>🛂</span></div>
+            <h3>Visas & Documents</h3>
+            <p>Most travelers need an e-Visa to enter India. Ensure your passport is valid for at least 6 months beyond your stay and carry multiple physical copies of your documents.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon"><span>💊</span></div>
+            <h3>Health & Safety</h3>
+            <p>Drink only bottled or filtered water. Carry a basic first-aid kit and get recommended vaccinations well in advance. Travel insurance is highly recommended.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon"><span>🙏</span></div>
+            <h3>Cultural Etiquette</h3>
+            <p>Always remove your shoes before entering temples and homes. Dress modestly, especially in rural areas and religious sites. A simple "Namaste" goes a long way!</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon"><span>💰</span></div>
+            <h3>Money & Budgeting</h3>
+            <p>While UPI and cards are widely accepted in cities, carry cash (Indian Rupees) for small vendors and rural areas. ATMs are widely available but may have limits.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon"><span>📶</span></div>
+            <h3>Connectivity</h3>
+            <p>Get a local SIM card at the airport (Airtel or Jio are popular). Wi-Fi is common in hotels and cafes, but data is very affordable in India.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon"><span>🚂</span></div>
+            <h3>Transportation</h3>
+            <p>For long distances, the Indian Railways offer an incredible experience—book in advance! In cities, use apps like Uber or Ola for reliable taxi services.</p>
+        </div>
+    </div>
+</main>
+
+<section class="seasonal-section">
+    <h2 class="section-title">Best Time to Visit</h2>
+    <p class="text-center" style="max-width: 800px; margin: 0 auto;">India is vast, and the ideal time to visit depends on where you're headed. Here's a quick guide to help you plan.</p>
+    
+    <div class="seasonal-grid">
+        <div class="season-card">
+            <h4>❄️ Winter (Oct - March)</h4>
+            <p>Best for Rajasthan, Kerala, and Goa. Perfect weather for sightseeing and beaches.</p>
+        </div>
+        <div class="season-card">
+            <h4>☀️ Summer (April - June)</h4>
+            <p>Ideal for Himalayan regions like Ladakh, Manali, and Rishikesh. Beat the heat in the mountains.</p>
+        </div>
+        <div class="season-card">
+            <h4>🌧️ Monsoon (July - Sept)</h4>
+            <p>Perfect for the Western Ghats and Kerala. The landscapes turn lush green and beautiful.</p>
+        </div>
+    </div>
+</section>
+
+<section class="checklist-section">
+    <h2 class="section-title" style="color: white;">Traveler's Checklist</h2>
+    <p class="text-center" style="opacity: 0.9;">Don't leave home without these essentials for your Indian adventure.</p>
+    
+    <div class="checklist-container">
+        <div class="checklist-box">
+            <h3>🧳 Packing Essentials</h3>
+            <div class="checklist-item"><input type="checkbox"> <span>Universal Power Adapter (Type D/M)</span></div>
+            <div class="checklist-item"><input type="checkbox"> <span>Conservative clothing (for temples)</span></div>
+            <div class="checklist-item"><input type="checkbox"> <span>Hand sanitizer & wet wipes</span></div>
+            <div class="checklist-item"><input type="checkbox"> <span>Comfortable walking shoes</span></div>
+        </div>
+        
+        <div class="checklist-box">
+            <h3>📄 Document Kit</h3>
+            <div class="checklist-item"><input type="checkbox"> <span>Printed e-Visa copy</span></div>
+            <div class="checklist-item"><input type="checkbox"> <span>Travel insurance details</span></div>
+            <div class="checklist-item"><input type="checkbox"> <span>Physical copies of Passport</span></div>
+            <div class="checklist-item"><input type="checkbox"> <span>Emergency contact list</span></div>
+        </div>
+        
+        <div class="checklist-box">
+            <h3>🏥 Medical Bag</h3>
+            <div class="checklist-item"><input type="checkbox"> <span>Digestive enzymes/Probiotics</span></div>
+            <div class="checklist-item"><input type="checkbox"> <span>Personal prescriptions</span></div>
+            <div class="checklist-item"><input type="checkbox"> <span>Mosquito repellent</span></div>
+            <div class="checklist-item"><input type="checkbox"> <span>Hydration salts (ORS)</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="phrases-section">
+    <h2 class="section-title">Common Phrases</h2>
+    <p class="text-center">A few words in Hindi go a long way in making connections with locals!</p>
+    
+    <div class="phrases-grid">
+        <div class="phrase-card">
+            <span class="hindi">Namaste</span>
+            <span class="meaning">Hello / Welcome</span>
+        </div>
+        <div class="phrase-card">
+            <span class="hindi">Shukriya / Dhanyavad</span>
+            <span class="meaning">Thank you</span>
+        </div>
+        <div class="phrase-card">
+            <span class="hindi">Kitna hai?</span>
+            <span class="meaning">How much is it?</span>
+        </div>
+        <div class="phrase-card">
+            <span class="hindi">Haan / Nahi</span>
+            <span class="meaning">Yes / No</span>
+        </div>
+        <div class="phrase-card">
+            <span class="hindi">Theek hai</span>
+            <span class="meaning">It's okay / Fine</span>
+        </div>
+        <div class="phrase-card">
+            <span class="hindi">Chalo</span>
+            <span class="meaning">Let's go</span>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>About Us</h3>
+            <p>Incredible India Travel Guide is your ultimate companion for exploring the beauty and diversity of India. We provide expert advice and curated destinations.</p>
+        </div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="travel_tips.html">Travel Tips</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <p>Email: nt3959367@gmail.com</p>
+            <p>Phone: +91 9816854989</p>
+            <p>Address: DSVV, haridwar, India</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Incredible India Travel Guide. All rights reserved.
+    </div>
+</footer>
 </body>
 </html>
